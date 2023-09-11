@@ -83,7 +83,7 @@ XPath expressions are used to navigate the structure of an XML or HTML document,
 **`Preceding-Sibling Axis (preceding-sibling::)`**: This axis selects all siblings that come before the current element. For example, /current/preceding-sibling::sibling selects all sibling elements that come before current.
 
 ## 3. Learn as much as posible development language
-To support scripting on test tools like Java/ C#/ Python/ Ruby/ Javascript/ Groovy... This is an extremely important part if you want to excel and advance in the career of an Automation Tester.\
+To support scripting on test tools like Java/ C#/ Python/ Ruby/ Javascript/ Groovy... This is an extremely important part if you want to excel and advance in the career of an Automation Tester.
 
 In automation testing, HTML and Java are pivotal components that work together seamlessly to create efficient and robust test scripts. HTML is utilized to structure and define the elements of the web page under test, including buttons, forms, and other interactive elements. Java, as a programming language, offers the versatility needed to write and execute automated test scripts effectively. With libraries and frameworks like Selenium WebDriver, testers can harness the power of Java to interact with HTML elements, simulate user actions, and validate expected behaviors. This synergy between HTML and Java enables automation testers to build comprehensive test suites, perform regression testing, and ensure the reliability and functionality of web applications, contributing to improved software quality and faster release cycles.
 
@@ -93,7 +93,7 @@ List website for increase coding logic
 - [Hiepsiit](https://hiepsiit.com/)
 
 ## 4. Learn and apply coding, IDE, git, extension
-- Coding convention:
+### Coding convention:
 > Coding standards are typically recognized and used by a group of developers to share code consistently. A common example of a coding standard is a set of conventions applied in the documentation of a programming language. For instance, languages like C have the K&R standard, Microsoft has coding standards for C#, and Oracle provides standards for Java, among others...
 
 **General rules for writing 'clean' code:**
@@ -146,10 +146,106 @@ According to Oracle's coding standards:
 - Code blocks at the same level should be aligned in the same column, and line breaks should start at the same level as the line above.
 - Line breaks should occur before operators (such as +, -, *, ?, ...).
 
+### Git
+- Git is a distributed version control system used in software development to track changes in source code. It enables multiple developers to work on the same project simultaneously by maintaining a history of code changes. Key features include branching for parallel development, merging and rebasing to integrate changes, commits to record snapshots of the code, and remote repositories for collaboration. Git is essential for efficient code management, history tracking, and team collaboration in software development projects.
+
+- SSH, which stands for Secure Shell, is a network protocol and cryptographic technology used for secure communication over a potentially unsecured network, such as the internet. SSH is primarily used for two main purposes:
+
+    - **`Remote Login`**: SSH allows users to log into and access a remote computer or server over a network. It provides a secure way to authenticate and establish a secure connection, preventing unauthorized access to sensitive systems. Users can execute commands, transfer files, and manage remote systems securely using SSH.
+
+    - **`Secure File Transfer`**: SSH also facilitates secure file transfer between computers. Tools like SCP (Secure Copy Protocol) and SFTP (Secure File Transfer Protocol) use SSH as the underlying protocol to ensure that files are transferred securely and confidentially.
+
+- Git uses ssh to communicate, contribute and manage the source code on remote origin of Github or Gitlab
+
+- Create SSH key
+1. Download [Git](https://git-scm.com/downloads)
+2. Install Git into local machine
+3. After installed Git. Open it and create a new ssh key
+```
+$ ssh-keygen -t rsa -C "your_account@thebank.vn"
+```
+This creates a new SSH key, using the provided email as a label.
+```
+> Generating public/private ALGORITHM key pair.
+```
+When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location.
+```
+> Enter a file in which to save the key (/c/Users/YOU/.ssh/id_ALGORITHM):[Press enter]
+> Enter passphrase (empty for no passphrase): [Press enter]
+> Enter same passphrase again: [Press enter]
+```
+4. Adding your SSH key to the ssh-agent
+Start a new `ssh-agent`
+```
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+```
+Add your SSH private key to the ssh-agent.
+```
+ssh-add ~/.ssh/id_rsa
+```
+5. Add the SSH public key to your account on GitHub\
+- In local machine, open `C:\Users\[user name](Admin)\.ssh\`
+- Open file `id_rsa.pub` by Notepad or Notepad++ or Vscode
+- Copy all text in this file
+- Open [github](https://github.com/)
+- Create or sign in account
+- On the top right of the screen (profile image), click open the right side-bar, click on Setting
+- On the left side-bar menu, click on `SSH and GPG keys`
+- Click on <span class="green-btn">New SSH key</span>
+- Input `Title` and paste all text from `id_rsa.pub` into field `Key`
+- Click button <span class="green-btn">New SSH key</span>
+
+### IDE
+1. Open repo git
+2. Click to <span class="green-btn"><> Code</span>
+3. Choose SSH and copy
+4. Download [VScode](https://code.visualstudio.com/download)
+5. Install vscode
+6. Open vscode and open terminal then type
+```
+git clone git@github.com:repo/project.git (paste which copied) [Press enter]
+```
+
+### Work with source code
+1. Pull new everything from remote main/master
+```
+git pull origin main/master
+```
+2. Create new branch from main/master
+```
+git checkout -b <branch name>
+```
+3. Code, contribute or maintain source code
+4. Add changes to stage
+```
+git add <related path file> || git add . (for add all file changed)
+```
+5. Commit code
+```
+git commit -m "message"
+```
+Note: Make sure message clear and convey the information of what is coded, message convention is `<name> creates/updates/fixes <something>`
+
+6. Pull new everything from fast-forward main/master
+```
+git pull origin main/master
+```
+7. Push own new code into remote origin branch
+```
+git push origin <branch name>
+```
+
 
 
 <style>
     .highlight-text {
         color: #64CCC5
+    }
+    .green-btn {
+        color: #66FF99
+    }
+    h3 {
+        color: orchid
     }
 </style>
