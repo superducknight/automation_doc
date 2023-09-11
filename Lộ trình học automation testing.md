@@ -4,7 +4,7 @@ Automation testing aims to improve testing efficiency, accuracy, and speed by au
 
 ## What we need to do
 1. Master knowledge of manual testing
-2. Understand about HTML, CSS and Xpath
+2. Understand about Xpath
 3. Learn as much as posible development language
 4. Learn and apply coding, IDE, git, extension
 5. Learn and use the supported automation library
@@ -81,3 +81,75 @@ XPath expressions are used to navigate the structure of an XML or HTML document,
 **`Following-Sibling Axis (following-sibling::)`**: This axis selects all siblings that come after the current element. For example, /current/following-sibling::sibling selects all sibling elements that come after current.
 
 **`Preceding-Sibling Axis (preceding-sibling::)`**: This axis selects all siblings that come before the current element. For example, /current/preceding-sibling::sibling selects all sibling elements that come before current.
+
+## 3. Learn as much as posible development language
+To support scripting on test tools like Java/ C#/ Python/ Ruby/ Javascript/ Groovy... This is an extremely important part if you want to excel and advance in the career of an Automation Tester.\
+
+In automation testing, HTML and Java are pivotal components that work together seamlessly to create efficient and robust test scripts. HTML is utilized to structure and define the elements of the web page under test, including buttons, forms, and other interactive elements. Java, as a programming language, offers the versatility needed to write and execute automated test scripts effectively. With libraries and frameworks like Selenium WebDriver, testers can harness the power of Java to interact with HTML elements, simulate user actions, and validate expected behaviors. This synergy between HTML and Java enables automation testers to build comprehensive test suites, perform regression testing, and ensure the reliability and functionality of web applications, contributing to improved software quality and faster release cycles.
+
+List website for increase coding logic
+- [Codelearn](https://codelearn.io/learning)
+- [Howkteam](https://howkteam.vn/learn)
+- [Hiepsiit](https://hiepsiit.com/)
+
+## 4. Learn and apply coding, IDE, git, extension
+- Coding convention:
+> Coding standards are typically recognized and used by a group of developers to share code consistently. A common example of a coding standard is a set of conventions applied in the documentation of a programming language. For instance, languages like C have the K&R standard, Microsoft has coding standards for C#, and Oracle provides standards for Java, among others...
+
+**General rules for writing 'clean' code:**
+1. Think simple and write the simplest code possible.
+2. Always keep the code cleaner than when you first received it, whether it's your own or someone else's.
+3. Always identify the root cause of the problem.
+
+**Naming Conventions**
+1. The way you name identifiers (including variables, constants, classes, etc.) significantly affects code readability. Imagine a massive software like Windows, but every function is named something like 'a,' 'b,' 'c,' 'function1,' 'function2,'... Managing and maintaining such code would undoubtedly be extremely challenging.
+2. There are three common naming conventions: camelCase, PascalCase, and snake_case. Specifically:\
+<span class="highlight-text">Camel case</span>: The first letter of each word is lowercase, and the rest of the letters are uppercase. This convention is applied to function names, variable names, and method names. For example: firstName, lastName, getName(), findMember(),...\
+<span class="highlight-text">Pascal case</span>`: The first letter of each word is capitalized, commonly used for class names or variable names. For example: MickeyMouse, FirstName,...\
+<span class="highlight-text">Snake case</span>: All letters are lowercase, separated by underscores ('_'). This convention is often used for constants or program names. For example: program_final, get_max(),...
+
+3. Some general rules for naming:\
+- Name identifiers descriptively, reflecting their true functionality.
+- Avoid using abbreviations in names.
+- Class and variable names often use nouns.
+- Function names typically use verbs.
+- Avoid using magic numbers (directly using numbers in code) and instead, give them meaningful names. For example:
+```
+// ❌
+if (gender === 0) { }
+else if (gender === 1) { }
+else { }
+
+// ✅
+const MALE = 0;
+const FEMALE = 1;
+
+if (gender === MALE) { }
+else if (gender === FEMALE) { }
+else { }
+```
+
+**Quantity Rules**\
+Some quantity rules from the book 'Clean Code: A Handbook of Agile Software Craftsmanship' by Robert C. Martin, the book 'Refactoring in Large Software Projects: Performing Complex Restructurings Successfully' by Martin Lippert, and Oracle's coding standards include the following:
+
+- A single line of code should not exceed 80 characters.
+- A statement should be nested no more than 4 levels deep.
+- A function should not have more than 5 parameters.
+- A function should not exceed 30 lines.
+- A class should not surpass 500 lines.
+- Each function should perform only one task. If it serves two different purposes, the function name should clearly indicate this. For example: `increaseDownloadCounterAndSaveToDatabase`.
+
+**Line Break Rules**\
+According to Oracle's coding standards:
+
+- If a function has multiple nested levels, each level should be indented with a line break.
+- Code blocks at the same level should be aligned in the same column, and line breaks should start at the same level as the line above.
+- Line breaks should occur before operators (such as +, -, *, ?, ...).
+
+
+
+<style>
+    .highlight-text {
+        color: #64CCC5
+    }
+</style>
