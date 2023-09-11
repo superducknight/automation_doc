@@ -108,7 +108,7 @@ List website for increase coding logic
 <span class="highlight-text">Pascal case</span>`: The first letter of each word is capitalized, commonly used for class names or variable names. For example: MickeyMouse, FirstName,...\
 <span class="highlight-text">Snake case</span>: All letters are lowercase, separated by underscores ('_'). This convention is often used for constants or program names. For example: program_final, get_max(),...
 
-3. Some general rules for naming:\
+3. Some general rules for naming:
 - Name identifiers descriptively, reflecting their true functionality.
 - Avoid using abbreviations in names.
 - Class and variable names often use nouns.
