@@ -3,14 +3,14 @@
 Automation testing aims to improve testing efficiency, accuracy, and speed by automating repetitive and time-consuming manual testing tasks. Automation testing or test automation uses open source or paid automated testing tools to test software applications quickly and efficiently, and 24/7 without human intervention.
 
 ## What we need to do
-1. Master knowledge of manual testing
-2. Understand about Xpath
-3. Learn as much as posible development language
-4. Learn and apply coding, IDE, git, extension
-5. Learn and use the supported automation library
-6. Build, run and maintain Framework Testing with Page Object Model
-7. Learn about Software design pattern
-8. Using all above knowledge applied for workspace
+1. [Master knowledge of manual testing](#1-master-knowledge-of-manual-testing)
+2. [Understand about Xpath](#2-understand-about-html-css-and-xpath)
+3. [Learn as much as posible development language](#3-learn-as-much-as-posible-development-language)
+4. [Learn and apply coding, IDE, git, extension](#4-learn-and-apply-coding-ide-git-extension)
+5. [Learn and use the supported automation library](#)
+6. [Build, run and maintain Framework Testing with Page Object Model](#)
+7. [Learn about Software design pattern](#)
+8. [Using all above knowledge applied for workspace](#)
 
 ## 1. Master knowledge of manual testing
 Fundamental knowledge in manual testing is of paramount importance in the software development process. It serves as the foundation upon which efficient and effective testing strategies are built. Manual testers armed with this knowledge can thoroughly understand the software's specifications and intricacies, allowing them to identify critical test scenarios and potential pitfalls that automated testing may miss. This expertise enables them to design comprehensive test cases, execute them meticulously, and provide valuable feedback to developers, contributing significantly to the overall quality of the software. Furthermore, manual testing knowledge empowers testers to adapt to evolving project requirements and unforeseen issues, ensuring that the software is robust, reliable, and meets the end-users' expectations.
